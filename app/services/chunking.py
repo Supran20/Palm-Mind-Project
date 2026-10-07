@@ -1,6 +1,6 @@
+import re
 from dataclasses import dataclass
 from enum import StrEnum
-import re
 from typing import Protocol
 
 DEFAULT_CHUNK_SIZE = 800

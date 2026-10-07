@@ -11,10 +11,9 @@ class Settings(BaseSettings):
     qdrant_collection: str = "documents"
     redis_url: str
     embedding_model: str = "sentence-transformers/all-MiniLM-L6-v2"
-    embedding_dim: int = 384
     max_upload_mb: int = 10
 
 
 @lru_cache
 def get_settings() -> Settings:
-    return Settings()  
+    return Settings()
